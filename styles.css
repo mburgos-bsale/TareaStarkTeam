@@ -26,7 +26,7 @@ html, body {
 .contenido{
     display: grid;
     grid-template-columns: auto 1fr;;
-    align-items: start; /* evita estiramiento vertical del sidebar */
+    align-items: start;
 }
 
 .form-input {
@@ -42,9 +42,9 @@ html, body {
     background-color: #ffffff;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
     width: 320px;
-    margin: 24px 0 0 24px;
+    margin: 50px 0 0 24px;
     border-radius: 12px;
-    padding: 20px 16px; /* <-- 16px es el padding horizontal del card */
+    padding: 20px 16px;
     overflow-y: auto;
 }
 
@@ -173,7 +173,7 @@ h1{
 }
 
 .mdc-button--unelevated:disabled {
-    background-color: #B3E5F2 !important; /* tono claro del primario */
+    background-color: #B3E5F2 !important;
     color: #FFFFFF;
     opacity: 0.6;
     cursor: not-allowed;
@@ -191,7 +191,6 @@ h1{
   letter-spacing: 0.4px;
 }
 
-/* Línea inferior siempre azul */
 .mdc-line-ripple::before,
 .mdc-line-ripple::after {
     border-bottom-color: #0099CC !important;
