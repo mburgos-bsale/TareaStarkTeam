@@ -1,0 +1,142 @@
+<head>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Cargar MDC antes de main.js -->
+    <script defer src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="https://dojiw2m9tvv09.cloudfront.net/4/14/logo-bsale-naranjo2302.png" alt="Logo Bsale">
+    </header>
+
+    <main class="contenido">
+        <div class="sidebar">
+            <h2 class="sidebar-title">BARRERA Y GENTINA LIMITADA</h2>
+            <h2 class="sidebar-rut">RUT 23479874-3</h2>
+            <ul class="sidebar-menu">
+                <li>
+                    <a class="menu-item" id="datos-empresa">Datos de la empresa</a>
+                </li>
+                <li>
+                    <a class="menu-item" id="datos-representante">Datos del representante legal</a>
+                </li>
+                <li>
+                    <a class="menu-item">Datos para envío de la facturación</a>
+                </li>
+                <li>
+                    <a class="menu-item">¿Quién implementará Bsale?</a>
+                </li>
+                <li>
+                    <a class="menu-item">Información para tu proceso</a>
+                </li>
+                <li>
+                    <a class="menu-item">Información para tus documentos</a>
+                </li>
+                <li>
+                    <a class="menu-item">Capacitación</a>
+                </li>
+            </ul>
+        </div>
+        <!-- PASAR DIV A <li> </li>-->
+
+        <div class="form">
+            <h1>Datos de la Empresa</h1>
+            <form>
+                <label class="form-text">RUT de la empresa</label>
+                <div class="form-input">
+                    <label class="mdc-text-field mdc-text-field--filled">
+                        <span class="mdc-text-field__ripple"></span>
+                        <input id="rut-empresa" class="mdc-text-field__input" type="text" aria-labelledby="my-label-id"
+                            aria-describedby="rut-helper">
+                        <span class="mdc-line-ripple"></span>
+                    </label>
+                    <div class="mdc-text-field-helper-line">
+                        <div class="mdc-text-field-helper-text--persistent" id="rut-helper">Por ejemplo</div>
+                    </div>
+                </div>
+
+                <label class="form-text">Razón Social</label>
+                <div class="form-input">
+                    <label class="mdc-text-field mdc-text-field--filled">
+                        <span class="mdc-text-field__ripple"></span>
+                        <input id="razon-social" class="mdc-text-field__input" type="text" aria-labelledby="my-label-id"
+                            aria-describedby="my-helper-id">
+                        <span class="mdc-line-ripple"></span>
+                    </label>
+                    <div class="mdc-text-field-helper-line">
+                        <div class="mdc-text-field-helper-text--persistent" id="rut-helper">Por ejemplo</div>
+                    </div>
+                </div>
+
+
+                <label class="form-text">Dirección de la empresa</label>
+                <div class="form-input">
+                    <label class="mdc-text-field mdc-text-field--filled">
+                        <span class="mdc-text-field__ripple"></span>
+                        <input id="direccion-empresa" class="mdc-text-field__input" type="text"
+                            aria-labelledby="my-label-id" aria-describedby="my-helper-id">
+                        <span class="mdc-line-ripple"></span>
+                    </label>
+                    <div class="mdc-text-field-helper-line">
+                        <div class="mdc-text-field-helper-text--persistent" id="rut-helper">Por ejemplo</div>
+                    </div>
+                </div>
+
+
+                <label class="form-text">Comuna</label>
+                <div class="form-input">
+                    <label class="mdc-text-field mdc-text-field--filled">
+                        <span class="mdc-text-field__ripple"></span>
+                        <input id="comuna" class="mdc-text-field__input" type="text" aria-labelledby="my-label-id"
+                            aria-describedby="my-helper-id">
+                        <span class="mdc-line-ripple"></span>
+                    </label>
+                    <div class="mdc-text-field-helper-line">
+                        <div class="mdc-text-field-helper-text--persistent" id="rut-helper">Por ejemplo</div>
+                    </div>
+                </div>
+
+                <label class="form-text">Actividad económica</label>
+                <div class="form-input">
+                    <label class="mdc-text-field mdc-text-field--filled">
+                        <span class="mdc-text-field__ripple"></span>
+                        <input id="actividad-economica" class="mdc-text-field__input" type="text"
+                            aria-labelledby="my-label-id" aria-describedby="my-helper-id">
+                        <span class="mdc-line-ripple"></span>
+                    </label>
+                    <div class="mdc-text-field-helper-line">
+                        <div class="mdc-text-field-helper-text--persistent" id="rut-helper">Por ejemplo</div>
+                    </div>
+                </div>
+
+
+                <button id="btn-enviar" type="button" class="mdc-button mdc-button--unelevated" disabled>
+                    <span class="mdc-button__ripple"></span> ENVIAR
+                </button>
+        </div>
+    </main>
+
+    <!-- Diálogo de confirmación -->
+    <div class="mdc-dialog">
+        <div class="mdc-dialog__container">
+            <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="dlg-title"
+                aria-describedby="emp-dialog-content">
+                <h2 id="dlg-title" class="mdc-dialog__title">Confirmar datos</h2>
+                <div class="mdc-dialog__content" id="emp-dialog-content"></div>
+                <div class="mdc-dialog__actions">
+                    <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="cancel"><span
+                            class="mdc-button__label">Editar</span></button>
+                    <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="accept"><span
+                            class="mdc-button__label">Continuar</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+    </div>
+</body>
+
+
+<!-- URL LOGO: https://dojiw2m9tvv09.cloudfront.net/4/14/logo-bsale-naranjo2302.png-->

@@ -1,0 +1,140 @@
+<head>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=attach_file" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="https://dojiw2m9tvv09.cloudfront.net/4/14/logo-bsale-naranjo2302.png" alt="Logo Bsale">
+    </header>
+
+    <main class="contenido">
+        <div class="sidebar">
+            <h2 class="sidebar-title">BARRERA Y GENTINA LIMITADA</h2>
+            <h2 class="sidebar-rut">RUT 23479874-3</h2>
+            <ul class="sidebar-menu">
+                <li>
+                    <a class="menu-item" id="datos-empresa">Datos de la empresa</a>
+                </li>
+                <li>
+                    <a class="menu-item" id="datos-representante">Datos del representante legal</a>
+                </li>
+                <li>
+                    <a class="menu-item">Datos para envío de la facturación</a>
+                </li>
+                <li>
+                    <a class="menu-item">¿Quién implementará Bsale?</a>
+                </li>
+                <li>
+                    <a class="menu-item">Información para tu proceso</a>
+                </li>
+                <li>
+                    <a class="menu-item">Información para tus documentos</a>
+                </li>
+                <li>
+                    <a class="menu-item">Capacitación</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form">
+            <h1>Datos del representante legal</h1>
+            <form>
+                <label class="form-text">RUT del representante legal</label>
+                <div class="form-input">
+                    <label class="mdc-text-field mdc-text-field--filled">
+                        <span class="mdc-text-field__ripple"></span>
+                        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id"
+                            aria-describedby="my-helper-id">
+                        <span class="mdc-line-ripple"></span>
+                    </label>
+                    <div class="mdc-text-field-helper-line">
+                        <div class="mdc-text-field-helper-text--persistent" id="rut-helper">Por ejemplo</div>
+                    </div>
+                </div>
+
+                <!--
+                <div class="mdc-text-field-helper-line">
+                    <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="false">Por ejemplo</div>
+                </div>
+                -->
+                <label class="form-text">Nombre del representante legal</label>
+                <div class="form-input">
+                    <label class="mdc-text-field mdc-text-field--filled">
+                        <span class="mdc-text-field__ripple"></span>
+                        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id"
+                            aria-describedby="my-helper-id">
+                        <span class="mdc-line-ripple"></span>
+                    </label>
+                    <div class="mdc-text-field-helper-line">
+                        <div class="mdc-text-field-helper-text--persistent" id="my-helper-id">Por ejemplo</div>
+                    </div>
+                </div>
+
+
+                <label class="form-text">Email del representante legal</label>
+                <div class="form-input">
+                    <label class="mdc-text-field mdc-text-field--filled">
+                        <span class="mdc-text-field__ripple"></span>
+                        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id"
+                            aria-describedby="my-helper-id">
+                        <span class="mdc-line-ripple"></span>
+                    </label>
+                    <div class="mdc-text-field-helper-line">
+                        <div class="mdc-text-field-helper-text--persistent" id="my-helper-id">Por ejemplo</div>
+                    </div>
+                </div>
+
+
+                <label class="form-text">RUT vigente</label>
+                <div class="rut-container">
+                    <div class="rut-item">
+                        <span class="material-symbols-outlined">
+                            attach_file
+                        </span>
+                        <p>RUT parte frontal</p>
+                    </div>
+                    <div class="rut-item">
+                        <span class="material-symbols-outlined">
+                            attach_file
+                        </span>
+                        <p>RUT parte trasera</p>
+                    </div>
+                </div>
+
+                <label class="form-text">¿Tiene certificado digital?</label>
+                <div class="mdc-form-field">
+                    <div class="mdc-radio">
+                        <input class="mdc-radio__native-control" type="radio" name="radios" checked>
+                        <div class="mdc-radio__background">
+                            <div class="mdc-radio__outer-circle"></div>
+                            <div class="mdc-radio__inner-circle"></div>
+                        </div>
+                        <div class="mdc-radio__ripple"></div>
+                    </div>
+                    <label>Sí</label>
+                    <div class="mdc-radio">
+                        <input class="mdc-radio__native-control" type="radio" name="radios">
+                        <div class="mdc-radio__background">
+                            <div class="mdc-radio__outer-circle"></div>
+                            <div class="mdc-radio__inner-circle"></div>
+                        </div>
+                        <div class="mdc-radio__ripple"></div>
+                    </div>
+                    <label>No</label>
+                </div>
+
+
+                <button class="mdc-button mdc-button--unelevated"> <span class="mdc-button__ripple"></span>
+                    ENVIAR</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+
+<!-- URL LOGO: https://dojiw2m9tvv09.cloudfront.net/4/14/logo-bsale-naranjo2302.png-->
